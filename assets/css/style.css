@@ -62,7 +62,7 @@
     list-style: none;
 }
 .nav__item{
-    padding: 30px;
+    padding: 34px 30px;
     position: relative;
     cursor: pointer;
 }
@@ -72,7 +72,7 @@
 .nav__item:hover .nav-full{
     display: flex;
 }
-.nav__item > a{
+.nav__item  > a{
     font-weight: 600;
 }
 .nav__list--lv2{

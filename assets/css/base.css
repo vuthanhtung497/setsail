@@ -1,0 +1,151 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #212121;
+    --sub-text-color: #505050;
+    --primary-color: #3FD0D4;
+    --hover-color: #23A9AF;
+    --purple-color: #BA71DA;
+    --red-color: #F76570;
+    --yellow-color:#FFD205;
+    --green-color: #1BBC9B;
+    --height-header: 104px;
+    --text-white: #a9a9a9;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    padding: 8px 24px;
+    border-radius: 50px;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+@keyframes fadeIn {
+    0% {
+        transform: scaleY(0)
+
+    }
+    100% {
+
+        transform: scaleY(1)
+    }
+}
+@keyframes fadeIn2 {
+    0% {
+        transform:translateX(100%)
+
+    }
+    100% {
+
+        transform: translateX(0)
+    }
+}
+@keyframes mymove {
+    0% {
+        background-position: 20% 20%;
+    }
+    50% {
+        background-position: 40% 40%;
+    }
+    100%{
+        background-position: 20% 20%;
+    }
+}
+@keyframes identifier {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes modalSearch {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* CSS Next and Prev Slider */
+.slick-prev{
+    position:absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    /* background-color: var(--white-color); */
+    border: none;
+    /* padding: 16px; */
+    z-index: 1;
+}
+.slick-next{
+    position:absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    /* background-color: var(--white-color); */
+    border: none;
+    /* padding: 16px; */
+    z-index: 1;
+}
+.slick-arrow{
+    background-color: var(--white-color);
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+.slick-arrow:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+/* CSS Dots Slider */
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 0 12px;
+    /* font-size: 0; */
+}
+.slick-dots button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+    outline: none;
+    border-radius: 100rem;
+    background-color: #9deaec;
+    cursor: pointer;
+}
+.slick-dots .slick-active button{
+    background-color: var(--hover-color);
+}

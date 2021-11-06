@@ -1,0 +1,169 @@
+@media (min-width: 1050px) and (max-width: 1250px) {
+    .nav__item{
+        padding: 20px;
+    }
+    .slider__content h1{
+        font-size: 8rem;
+    }
+    .slider__content h3{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1050px) {
+    .nav__item{
+        padding: 16px;
+    }
+    .slider__content h1{
+        font-size: 8rem;
+    }
+    .slider__content h3{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+
+}
+/* @media (width: 1023px) {
+    .header__nav{
+        display: none;
+} */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header{
+        /* background-color: var(--primary-color); */
+    }
+    .header__nav{
+        display: none;
+    }
+    .heading-section h2{
+        font-size: 4.4rem;
+        padding-top: 34px;
+    }
+    .heading-section h3{
+        font-size: 4rem;
+    }
+    .heading-section h4{
+        font-size: 1.6rem;
+        padding: 34px 10% 60px 10%;
+    }
+    .slider__content{
+        padding-top: 80px;
+    }
+    .slider__content h1{
+        font-size: 7rem;
+    }
+    .slider__content h3{
+        font-size: 3.6rem;
+    }
+    .slider__content h5{
+        font-size: 1.6rem;
+    }
+    .discover video{
+        width: 80%;
+    }
+    .desc__item{
+        padding-top: 60px;
+    }
+    .saleoff__item-label{
+        right: 8px;
+    }
+    .slick-arrow{
+        display: none; !important
+    }
+    
+}
+@media (max-width: 739px) {
+    .header__nav{
+        display: none;
+    }
+    .slider__content{
+        padding-top: 80px;
+    }
+    .slider__content h1{
+        font-size: 4rem;
+    }
+    .slider__content h3{
+        font-size: 2rem;
+    }
+    .slider__content h5{
+        padding: 0 10%;
+        font-size: 1.4rem;
+    }
+
+    .search{
+        display: block;
+        box-shadow: none;
+    }
+    .search > div{
+        width: 80%;
+        /* left: 50%; */
+        transform: translateX(12.5%);
+    }
+    .choose{
+        padding-top: 240px;
+    }
+    .choose > img{
+        width: 100%;
+    }
+    .heading-section h2{
+        font-size: 3.4rem;
+        padding-top: 34px;
+    }
+    .heading-section h3{
+        font-size: 3rem;
+    }
+    .heading-section h4{
+        font-size: 1.6rem;
+        padding: 34px 10% 60px 10%;
+    }
+    .discover video{
+        width: 97%;
+    }
+    .desc__item{
+        padding-top: 60px;
+    }
+    .saleoff__item:hover{
+        transform: translateY(0);
+        cursor: pointer;
+    }
+    .saleoff__item-label{
+        right: 4px;
+    }
+    .blog__container{
+        padding-left: 16px;
+    }
+    .destination{
+        background-image: unset;
+        background-color: #F8F8F8;
+        padding-top: 0;
+    }
+    .footer .row > div{
+        /* padding-bottom: 60px; */
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .slick-arrow{
+        display: none;!important
+    }
+    
+}
+@media (max-width :456px) {
+    .slider__content h1{
+        font-size: 3rem;
+    }
+    .status {
+        display: flex;
+        padding: 16px 0;
+    }
+    .status__content{
+        padding: 0 30px;
+    }
+    .status__content h5{
+        font-size: 1.6rem;
+    }
+    .status__content-time a{
+        display: block;
+    }
+    .status__content > span{
+        padding: 8px 0;
+    }
+}

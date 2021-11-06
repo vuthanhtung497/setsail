@@ -166,4 +166,7 @@
     .status__content > span{
         padding: 8px 0;
     }
+    .header__quick{
+        width: 100%;
+    }
 }

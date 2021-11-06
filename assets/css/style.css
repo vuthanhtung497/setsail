@@ -35,6 +35,9 @@
 .header__logo img{
     height: 100%;
 }
+.header__logo:hover{
+    cursor: pointer;
+}
 .header__nav{
     font-size: 1.5rem;
 }
@@ -193,20 +196,19 @@
     font-size: 1.4rem;
     padding: 30px 40px;
     display: block;
-}
-.modal__search-container input:nth-child(1){
-    width: 80%;
+    width: 70%;
     background-color: var(--white-color);
 }
-.modal__search-container input:nth-child(2){
-    width: 20%;
-    /* min-width: 64px; */
+.modal__search-container button{
+    width: 30%;
+    font-size: 1.4rem;
     background-color: var(--primary-color);
     color: var(--white-color);
     font-weight: 600;
-    /* padding: auto; */
+    border: none;
+    outline: none;
 }
-.modal__search-container input:nth-child(2):hover{
+.modal__search-container button:hover{
     background-color: var(--hover-color);
     cursor: pointer;
 }
@@ -466,6 +468,10 @@ select::-ms-expand {
     padding: 16px 44px;
     width: 100%;
     font-weight: 600;
+}
+.search__btn button:hover{
+    cursor: pointer;
+    background-color: var(--hover-color);
 }
 
 /* Perfect Holiday */

@@ -5,13 +5,32 @@ var quickClose = document.querySelector('.quick-close')
 var btnSearch = document.querySelector('.js-btn-search')
 var modalSearch = document.querySelector('.js-modal-search')
 barBtn.onclick = function(){
-    headerModal.classList.add('open')
+    headerQuick.classList.add('open')
+    // headerModal.classList.add('open')
 }
 
-headerModal.onclick = function(e){
-    if(!e.target.closest('.header__quick') || e.target.closest('.quick-close')){
-        headerModal.classList.remove('open')
-    }
+// headerModal.onclick = function(e){
+//     if(!e.target.closest('.header__quick') || e.target.closest('.quick-close')){
+//         headerModal.classList.remove('open')
+//     }
+// }
+// window.onclick = function(e){
+//   if(!e.target.closest('.header__quick') || e.target.closest('.quick-close')){
+//       headerQuick.classList.remove('open')
+//   }
+// }
+// headerQuick.onclick = function(e){
+//   headerQuick.classList.remove('open')
+// }
+
+window.addEventListener("click", function(e) {
+  if(!e.target.closest('.header__quick') && (!e.target.closest('.header__btn-bar'))){
+    headerQuick.classList.remove('open')
+  }
+});
+
+quickClose.onclick =function(){
+  headerQuick.classList.remove('open')
 }
 
 btnSearch.addEventListener('click', function(){
@@ -33,11 +52,16 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        // prevArrow: false,
-        // nextArrow: false,
-        // pauseOnHover: false,
         prevArrow:"<button type='button' class='slick-prev slick-arrow pull-left'><i class='fas fa-chevron-left'></i></button>",
         nextArrow:"<button type='button' class='slick-next slick-arrow pull-right'><i class='fas fa-chevron-right'></i></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: false,
+            }
+          },
+        ]
   });
 });
 
@@ -112,12 +136,6 @@ $(document).ready(function(){
               slidesToScroll: 1,
             }
           }
-          // {
-          //   breakpoint: 480,
-          //   settings: {
-
-          //   }
-          // }
         ]
     });
   });
